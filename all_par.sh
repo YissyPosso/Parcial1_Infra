@@ -12,7 +12,7 @@ for i in $(seq 1 $NUM_IMAGES); do
     python3 fromPNG2Bin.py ${INPUT_PNG}
     
     # Procesar el archivo binario con el programa principal
-    ./main ${TEMP_FILE}
+    ./main_par ${TEMP_FILE}
     
     # Convertir el archivo procesado de binario a PNG 
     python3 fromBin2PNG.py ${TEMP_FILE}.new
